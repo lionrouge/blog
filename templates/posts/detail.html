@@ -1,0 +1,10 @@
+{% load comments %}
+<h1>{{ post.title }}</h1>
+<p>{{ post.body }}</p>
+{% render_comment_form for post %}
+{% render_comment_list for post %}
+<!-- <ul>
+{% for c in comments %}
+	<li>{{ c.author.nick }}: {{ c.body }}</li>
+{% endfor %}
+</ul> -->
